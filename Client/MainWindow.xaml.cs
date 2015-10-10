@@ -22,6 +22,10 @@ namespace Client
         public MainWindow()
         {
             InitializeComponent();
+            ChatService chat = new ChatService("testUser", "testRoom");
+            chat.connectServer();
+            chat.sendText("Hello every one");
+            
         }
     }
 }
